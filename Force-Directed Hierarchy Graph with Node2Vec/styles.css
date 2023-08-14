@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+/* Apply the font-family style to the text elements inside the SVG */
+text {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 10px;
+}
+
+.button rect {
+  fill: lightblue;
+}
+
+.button text {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 15px;
+  fill: black;
+}

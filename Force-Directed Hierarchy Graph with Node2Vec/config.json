@@ -1,0 +1,15 @@
+{
+  	"maxNumNodes":5000,
+    "numNodePerCluster": 300,
+    "numEdgePerCluster": 700,
+    "numAdjNodePerCluster": 150,
+    "numAdjEdgePerCluster": 300,
+    "numWalks":    50,
+    "walkLength":  5,
+    "dimensions":  20,
+  	"numClusters": 15,
+  	"maxIterations": 500,
+  	"id2nameURL": "https://raw.githubusercontent.com/Khaninsi/D3-visualization/main/data/user.json",
+  	"edgesURL": "https://raw.githubusercontent.com/Khaninsi/D3-visualization/main/data/enron_edges.txt",
+  	"communityFile": "https://raw.githubusercontent.com/Khaninsi/D3-visualization/main/data/enron-community.json"
+}
