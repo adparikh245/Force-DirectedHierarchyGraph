@@ -4,18 +4,15 @@ import json
 with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/lastfm_asia_features.json', 'r') as f:
     original_data = json.load(f)
 
-# Transform the data to an array of node objects
-new_data = []
+# Transform the data to the desired format
+new_data = {}
 for node_id, features in original_data.items():
-    # Create a new node object for each entry
-    node_object = {
-        "id": int(node_id),
-        "features": features  # Add the list of features as a property
-    }
-    new_data.append(node_object)
+    # Create a new key with the "Com." prefix and add the list of features
+    community_key = f"Com.{node_id}"
+    new_data[community_key] = features
 
 # Save the new data format to a new file
-with open('transformed_lastfm_asia_nodes.json', 'w') as f:
+with open('transformed_lastfm_asia_features.json', 'w') as f:
     json.dump(new_data, f, indent=4)
 
-print("Transformation complete. Check 'transformed_lastfm_asia_nodes.json' for the new format.")
+print("Transformation complete. Check 'transformed_lastfm_asia_features.json' for the new format.")
