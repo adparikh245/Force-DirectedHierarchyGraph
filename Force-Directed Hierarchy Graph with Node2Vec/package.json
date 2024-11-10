@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "devDependencies": {
-    "rollup": "latest",
-    "@rollup/plugin-buble": "latest"
+    "@rollup/plugin-buble": "latest",
+    "rollup": "^4.24.2"
   }
 }

@@ -11,5 +11,5 @@
   	"maxIterations": 500,
   	"id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/lastfm_asia_target.json",
   	"edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/lastfm_asia_edges.txt",
-  	"communityFile": "https://raw.githubusercontent.com/Khaninsi/D3-visualization/main/data/enron-community.json"
+  	"communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/lastfm_asia_features.json"
 }
