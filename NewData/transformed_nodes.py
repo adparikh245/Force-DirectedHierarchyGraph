@@ -10,10 +10,10 @@ for edge in edges:
     for node in edge:
         clean_node = ''.join(filter(str.isdigit, node))
         if clean_node:
-            node_ids.add(clean_node)
+            node_ids.add(int(clean_node))  # Convert to int here
 
 # Create dummy names for nodes
-node_data = {str(node_id): f"User {node_id}" for node_id in sorted(node_ids, key=int)}
+node_data = {node_id: f"User {node_id}" for node_id in sorted(node_ids)}
 
 # Save to JSON file
 with open('c_lastfm_asia_user.json', 'w') as f:

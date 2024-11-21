@@ -9,7 +9,7 @@
     "dimensions":  20,
   	"numClusters": 15,
   	"maxIterations": 500,
-  	"id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/main/NewData/c_lastfm_asia_user.json",
+    "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/main/NewData/c_lastfm_asia_user.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/main/NewData/lastfm_asia_edges_cleaned.txt",
     "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/main/NewData/c_lastfm_asia_community.json"
 }
