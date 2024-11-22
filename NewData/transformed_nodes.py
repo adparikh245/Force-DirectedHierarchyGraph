@@ -1,7 +1,7 @@
 import json
 
 # Load edges to gather unique node IDs
-with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/lastfm_asia_edges.txt', 'r') as f:
+with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/lastfm_asia_edges_cleaned.txt', 'r') as f:
     edges = [line.strip().split() for line in f.readlines()]
 
 # Extract unique node IDs
@@ -15,11 +15,13 @@ for edge in edges:
 # Create dummy names for nodes
 node_data = {node_id: f"User {node_id}" for node_id in sorted(node_ids)}
 
-# Save the Python dictionary to a new Python file
-output_file = '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/node_data.py'
+# Save to file with integer keys
+output_file = '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/node_user_mapping.txt'
 with open(output_file, 'w') as f:
-    f.write("# This file contains the node_data dictionary\n")
-    f.write("node_data = {\n")
-    for node_id, user_name in node_data.items():
-        f.write(f"    {node_id}: '{user_name}',\n")
-    f.write("}\n")
+    f.write("{\n")
+    for i, (key, value) in enumerate(node_data.items()):
+        f.write(f"  {key}: \"{value}\"")  # Write key as an integer
+        if i < len(node_data) - 1:
+            f.write(",\n")
+    f.write("\n}")
+
