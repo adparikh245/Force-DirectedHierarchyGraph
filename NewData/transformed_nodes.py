@@ -8,14 +8,14 @@ with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/New
 node_ids = set()
 for edge in edges:
     for node in edge:
-        clean_node = ''.join(filter(str.isdigit, node))
+        clean_node = ''.join(filter(str.isdigit, node))  # Extract digits from node
         if clean_node:
-            node_ids.add(int(clean_node))  # Convert to int here
+            node_ids.add(int(clean_node))  # Convert to integer
 
 # Create dummy names for nodes
 node_data = {node_id: f"User {node_id}" for node_id in sorted(node_ids)}
 
 # Save to JSON file
-with open('c_lastfm_asia_user.json', 'w') as f:
+with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_user.json', 'w') as f:
     json.dump(node_data, f, indent=4)
-print("Node file created as 'c_lastfm_asia_user.json'")
+print("Node file created as '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_user.json'")
