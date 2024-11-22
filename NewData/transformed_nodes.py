@@ -15,7 +15,11 @@ for edge in edges:
 # Create dummy names for nodes
 node_data = {node_id: f"User {node_id}" for node_id in sorted(node_ids)}
 
-# Save to JSON file
-with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_user.json', 'w') as f:
-    json.dump(node_data, f, indent=4)
-print("Node file created as '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_user.json'")
+# Save the Python dictionary to a new Python file
+output_file = '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/node_data.py'
+with open(output_file, 'w') as f:
+    f.write("# This file contains the node_data dictionary\n")
+    f.write("node_data = {\n")
+    for node_id, user_name in node_data.items():
+        f.write(f"    {node_id}: '{user_name}',\n")
+    f.write("}\n")
