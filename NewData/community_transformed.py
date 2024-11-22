@@ -31,4 +31,5 @@ with open(output_path, 'w', encoding='utf-8') as f:
     # Write the JSON with proper formatting
     json.dump(community_data, f, indent=4, ensure_ascii=False)
 
+print(f"Community file created successfully at: {output_path}")
 
