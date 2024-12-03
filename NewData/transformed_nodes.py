@@ -12,12 +12,10 @@ for edge in edges:
         if clean_node:
             node_ids.add(int(clean_node))  # Convert to integer
 
-# Create the id-to-name mapping with names as keys and IDs as values
+# Create the id-to-name mapping in the required format
 id2name_mapping = {f"User {node_id}": node_id for node_id in sorted(node_ids)}
 
 # Save the mapping to a JSON file
 output_path = '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/id2name.json'
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(id2name_mapping, f, indent=4, ensure_ascii=False)
-
-print(f"ID-to-name mapping saved successfully to: {output_path}")

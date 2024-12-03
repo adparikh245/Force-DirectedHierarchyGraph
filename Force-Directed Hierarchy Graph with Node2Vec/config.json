@@ -7,7 +7,7 @@
     "numWalks":    50,
     "walkLength":  5,
     "dimensions":  20,
-  	"numClusters": 15,
+  	"numClusters": 14,
   	"maxIterations": 500,
     "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/id2name.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/lastfm_asia_edges_cleaned.txt",
