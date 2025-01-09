@@ -9,7 +9,7 @@
     "dimensions":  20,
   	"numClusters": 10,
   	"maxIterations": 500,
-    "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet/nodes_100.json",
-    "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet/edges_100.txt",
-    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet/community_100.json"
+    "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/nodes_100_text_numeric_group.json",
+    "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/edges_100_numeric.txt",
+    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/community_100_numeric.json"
 }
