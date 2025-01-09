@@ -1,6 +1,6 @@
 {
   	"maxNumNodes":5000,
-    "numNodePerCluster": 300,
+    "numNodePerCluster": 150,
     "numEdgePerCluster": 700,
     "numAdjNodePerCluster": 150,
     "numAdjEdgePerCluster": 300,
@@ -11,5 +11,5 @@
   	"maxIterations": 500,
     "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/id2name.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/lastfm_asia_edges_cleaned.txt",
-    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/c_lastfm_asia_community.json"
+    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData/c_lastfm_asia_community_reduced.json"
 }

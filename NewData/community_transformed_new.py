@@ -1,29 +1,34 @@
 import json
 import random
 
-# Load edges to gather unique node IDs
-with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/lastfm_asia_edges_cleaned.txt', 'r') as f:
-    edges = [line.strip().split() for line in f.readlines()]
+# Load the existing community file
+with open('/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_community.json', 'r', encoding='utf-8') as f:
+    original_community_data = json.load(f)
 
-# Extract unique node IDs
-node_ids = set()
-for edge in edges:
-    for node in edge:
-        clean_node = ''.join(filter(str.isdigit, node))  # Extract digits from node
-        if clean_node:
-            node_ids.add(int(clean_node))  # Convert to integer
+# Combine all users into a single list
+all_users = []
+for users in original_community_data.values():
+    all_users.extend(users)
 
-# Define the number of communities
-num_clusters = 15  # Match with numClusters in the config file
+# Shuffle the list of users for redistribution
+random.shuffle(all_users)
 
-# Randomly assign users to communities
-community_data = {f"Com.{i}": [] for i in range(num_clusters)}
-for node_id in sorted(node_ids):
-    # Assign each user to a random community
-    random_community = f"Com.{random.randint(0, num_clusters - 1)}"
-    community_data[random_community].append(node_id)
+# Set the number of clusters and maximum nodes per community
+num_clusters = 14
+max_nodes_per_community = 150
 
-# Save the reduced community data to a JSON file
+# Initialize the reduced community structure
+reduced_community_data = {f"Com.{i}": [] for i in range(num_clusters)}
+
+# Redistribute users into clusters with a maximum node limit
+for user in all_users:
+    # Find the first cluster with available space
+    for i in range(num_clusters):
+        if len(reduced_community_data[f"Com.{i}"]) < max_nodes_per_community:
+            reduced_community_data[f"Com.{i}"].append(user)
+            break
+
+# Save the reduced community file
 output_path = '/Users/ananyaparikh/Documents/Coding/Force-DirectedHierarchyGraph/NewData/c_lastfm_asia_community_reduced.json'
 with open(output_path, 'w', encoding='utf-8') as f:
-    json.dump(community_data, f, indent=4, ensure_ascii=False)
+    json.dump(reduced_community_data, f, indent=4, ensure_ascii=False)
