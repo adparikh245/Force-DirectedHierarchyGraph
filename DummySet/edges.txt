@@ -1,0 +1,7 @@
+# Undirected graph: /.../data/output/dblp.ungraph.txt
+# DBLP
+# Nodes: 4 Edges: 3
+# FromNodeId ToNodeId
+1 2
+2 3
+3 4
