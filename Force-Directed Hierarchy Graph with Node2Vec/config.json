@@ -1,5 +1,5 @@
 {
-  	"maxNumNodes":5000,
+  	"maxNumNodes":100,
     "numNodePerCluster": 150,
     "numEdgePerCluster": 700,
     "numAdjNodePerCluster": 150,
@@ -7,7 +7,7 @@
     "numWalks":    50,
     "walkLength":  5,
     "dimensions":  20,
-  	"numClusters": 14,
+  	"numClusters": 10,
   	"maxIterations": 500,
     "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet/nodes_100.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet/edges_100.txt",
