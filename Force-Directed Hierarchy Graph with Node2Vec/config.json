@@ -4,12 +4,12 @@
     "numEdgePerCluster": 700,
     "numAdjNodePerCluster": 150,
     "numAdjEdgePerCluster": 300,
-    "numWalks":    50,
-    "walkLength":  5,
-    "dimensions":  20,
+    "numWalks": 50,
+    "walkLength": 5,
+    "dimensions": 20,
   	"numClusters": 10,
   	"maxIterations": 500,
-    "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/nodes_100_text_numeric_group.json",
+    "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/nodes.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/edges_100_numeric.txt",
     "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/DummySet2/community_100_numeric.json"
 }
