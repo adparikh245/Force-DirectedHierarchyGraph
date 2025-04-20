@@ -11,5 +11,5 @@
   	"maxIterations": 500,
     "id2nameURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData2/filtered_lastfm_features_5com.json",
     "edgesURL": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData2/filtered_lastfm_edges_5com.txt",
-    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData2/filtered_lastfm_community_5com.json"
+    "communityFile": "https://raw.githubusercontent.com/adparikh245/Force-DirectedHierarchyGraph/refs/heads/main/NewData2/filtered_lastfm_community_tutorial_format.json"
 }
